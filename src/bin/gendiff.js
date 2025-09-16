@@ -2,7 +2,7 @@
 
 import { program } from 'commander'
 import { getFilesData } from '../parsers.js'
-
+import { showDiffOfObjects } from '../index.js'
 program
   .name('gendiff')
   .description('Compares two configuration files and shows a difference.')
@@ -11,11 +11,11 @@ program
   .arguments('<filepath1> <filepath2>')
   .action((filepath1, filepath2) => {
     const { data1, data2 } = getFilesData(filepath1, filepath2)
+    const resultOfComparison = showDiffOfObjects(data1, data2)
 
-    console.log('File 1 data:', JSON.stringify(data1, null, 2))
-    console.log('File 2 data:', JSON.stringify(data2, null, 2))
+    console.log(resultOfComparison);
 
-    console.log(`Comparing ${filepath1} and ${filepath2}`)
+    //console.log(`Comparing ${filepath1} and ${filepath2}`)
     if (program.opts().format) {
       console.log(`Using format: ${program.opts().format}`)
     }
