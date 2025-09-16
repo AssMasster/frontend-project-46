@@ -6,3 +6,6 @@
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=AssMasster_frontend-project-46)](https://sonarcloud.io/summary/new_code?id=AssMasster_frontend-project-46)
 
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=AssMasster_frontend-project-46)
+
+Аксинема сравнения двух json файлов
+https://asciinema.org/a/FRAZRvDBA6lSbFk1pUhBOFsdY 
