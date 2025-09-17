@@ -9,3 +9,6 @@
 
 Аксинема сравнения двух json файлов
 https://asciinema.org/a/FRAZRvDBA6lSbFk1pUhBOFsdY 
+
+Бейдж изначальных тестов
+[![hexlet-check](https://github.com/AssMasster/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AssMasster/frontend-project-46/actions/workflows/hexlet-check.yml)

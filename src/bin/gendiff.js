@@ -13,9 +13,9 @@ program
     const { data1, data2 } = getFilesData(filepath1, filepath2)
     const resultOfComparison = showDiffOfObjects(data1, data2)
 
-    console.log(resultOfComparison);
+    console.log(resultOfComparison)
 
-    //console.log(`Comparing ${filepath1} and ${filepath2}`)
+    // console.log(`Comparing ${filepath1} and ${filepath2}`)
     if (program.opts().format) {
       console.log(`Using format: ${program.opts().format}`)
     }
