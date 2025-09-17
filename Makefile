@@ -15,3 +15,6 @@ make lint:
 
 gendiff:
 	node gendiff.js
+
+test:
+	npx jest
