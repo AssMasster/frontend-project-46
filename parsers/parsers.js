@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import yml from 'js-yaml'
 
 const getFileFormat = (fileName) => {
   const extension = path.extname(fileName).toLowerCase()
@@ -13,7 +14,10 @@ export const parseFile = (filepath) => {
   switch (format) {
     case 'json':
       return JSON.parse(fileContent)
-
+    case 'yml':
+      return yml.load(fileContent)
+    case 'yaml':
+      return yml.load(fileContent)
     default:
       throw new Error (`Unsupported file format: ${format}`)
   }

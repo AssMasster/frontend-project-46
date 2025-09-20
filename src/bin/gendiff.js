@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { program } from 'commander'
-import { getFilesData } from '../parsers.js'
+import { getFilesData } from '../../parsers/parsers.js'
 import { showDiffOfObjects } from '../index.js'
 program
   .name('gendiff')
