@@ -1,4 +1,3 @@
-import { showDiffOfObjects } from '../src/index.js'
 import { test, expect } from '@jest/globals'
 import path from 'path'
 import fs from 'fs'
