@@ -10,5 +10,11 @@
 Аксинема сравнения двух json файлов
 https://asciinema.org/a/FRAZRvDBA6lSbFk1pUhBOFsdY 
 
+Аксинема для yml файлов
+https://asciinema.org/a/yeTuxAykYv3GXIzsuze89TkoD
+
 Бейдж изначальных тестов
 [![hexlet-check](https://github.com/AssMasster/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AssMasster/frontend-project-46/actions/workflows/hexlet-check.yml)
+
+Аксинема для переработаной логики работы с учетом вложеннх структур 
+https://asciinema.org/a/c5nI97hlZnvRcqLyPv55PIeZR

@@ -1,30 +1,11 @@
-import _ from 'lodash'
+import { getFilesData } from '../parsers/parsers.js';
+import buildDiff from './diffBuilder/index.js';
+import format from '../formatters/index.js';
 
-export function showDiffOfObjects(obj1, obj2) {
-  const keysOfObj1 = Object.keys(obj1)
-  const keysOfObj2 = Object.keys(obj2)
+const genDiff = (filepath1, filepath2, formatName = 'stylish') => {
+  const { data1, data2 } = getFilesData(filepath1, filepath2);
+  const diff = buildDiff(data1, data2);
+  return format(diff, formatName);
+};
 
-  const result = []
-
-  const uniqKeys = new Set ([...keysOfObj1, ...keysOfObj2])
-  const sortedUniqKeys = _.sortBy(Array.from(uniqKeys))
-
-  for (const key of sortedUniqKeys) {
-    if (_.has(obj1, key) && !_.has(obj2, key)) {
-      result.push(`  - ${key}: ${obj1[key]}`)
-    }
-    else if (!_.has(obj1, key) && _.has(obj2, key)) {
-      result.push(`  + ${key}: ${obj2[key]}`)
-    }
-    else if (_.has(obj1, key) && _.has(obj2, key)) {
-      if (_.isEqual(obj1[key], obj2[key])) {
-        result.push(`    ${key}: ${obj1[key]}`)
-      }
-      else {
-        result.push(`  - ${key}: ${obj1[key]}`)
-        result.push(`  + ${key}: ${obj2[key]}`)
-      }
-    }
-  }
-  return `{\n${result.join('\n')}\n}`
-}
+export default genDiff;

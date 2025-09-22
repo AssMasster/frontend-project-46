@@ -1,24 +1,17 @@
 #!/usr/bin/env node
 
-import { program } from 'commander'
-import { getFilesData } from '../../parsers/parsers.js'
-import { showDiffOfObjects } from '../index.js'
+import { program } from 'commander';
+import genDiff from '../index.js';
+
 program
   .name('gendiff')
   .description('Compares two configuration files and shows a difference.')
   .version('1.0.0')
-  .option('-f, --format <type>', 'output format')
+  .option('-f, --format <type>', 'output format', 'stylish') // ← stylish по умолчанию
   .arguments('<filepath1> <filepath2>')
   .action((filepath1, filepath2) => {
-    const { data1, data2 } = getFilesData(filepath1, filepath2)
-    const resultOfComparison = showDiffOfObjects(data1, data2)
+    const result = genDiff(filepath1, filepath2, program.opts().format);
+    console.log(result);
+  });
 
-    console.log(resultOfComparison)
-
-    // console.log(`Comparing ${filepath1} and ${filepath2}`)
-    if (program.opts().format) {
-      console.log(`Using format: ${program.opts().format}`)
-    }
-  })
-
-program.parse(process.argv)
+program.parse(process.argv);
