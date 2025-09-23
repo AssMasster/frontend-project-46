@@ -18,3 +18,6 @@ https://asciinema.org/a/yeTuxAykYv3GXIzsuze89TkoD
 
 Аксинема для переработаной логики работы с учетом вложеннх структур 
 https://asciinema.org/a/c5nI97hlZnvRcqLyPv55PIeZR
+
+Аксинема работы с новым форматером plain
+https://asciinema.org/a/G7y4CqGWb8GUC7xqtZn3iIgcg
