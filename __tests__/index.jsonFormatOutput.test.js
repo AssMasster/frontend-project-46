@@ -10,7 +10,6 @@ const readFile = filename => fs.readFileSync(getFixturePath(filename), 'utf-8')
 test('diffOfTwoJsonFiles', () => {
   const data1 = JSON.parse(readFile('fixture1.json'))
   const data2 = JSON.parse(readFile('fixture2.json'))
-  const expected = readFile('expected.txt')
   const output = json(buildDiffTree(data1, data2))
   const result = JSON.parse(output)
 
