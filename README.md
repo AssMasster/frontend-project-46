@@ -21,3 +21,6 @@ https://asciinema.org/a/c5nI97hlZnvRcqLyPv55PIeZR
 
 Аксинема работы с новым форматером plain
 https://asciinema.org/a/G7y4CqGWb8GUC7xqtZn3iIgcg
+
+Аксинема работы форматера для вывода результата в виде json
+https://asciinema.org/a/QeYnLI89SK0tLRnL6M1fiIPuo
