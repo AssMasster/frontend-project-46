@@ -1,4 +1,6 @@
 ### Hexlet tests and linter status:
+Проект вычислитель отличий
+
 [![Actions Status](https://github.com/AssMasster/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AssMasster/frontend-project-46/actions)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AssMasster_frontend-project-46&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AssMasster_frontend-project-46)
