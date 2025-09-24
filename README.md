@@ -9,6 +9,8 @@
 
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=AssMasster_frontend-project-46)
 
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=AssMasster_frontend-project-46&metric=coverage)](https://sonarcloud.io/summary/new_code?id=AssMasster_frontend-project-46)
+
 Аксинема сравнения двух json файлов
 https://asciinema.org/a/FRAZRvDBA6lSbFk1pUhBOFsdY 
 
@@ -26,3 +28,4 @@ https://asciinema.org/a/G7y4CqGWb8GUC7xqtZn3iIgcg
 
 Аксинема работы форматера для вывода результата в виде json
 https://asciinema.org/a/QeYnLI89SK0tLRnL6M1fiIPuo
+
