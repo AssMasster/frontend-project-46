@@ -4,10 +4,10 @@ import fs from 'fs'
 import buildDiffTree from '../src/diffBuilder/index.js'
 import stylish from '../formatters/stylish.js'
 
-const getFixturePath = (filename) => 
+const getFixturePath = filename =>
   path.join(process.cwd(), '__fixtures__', filename)
 
-const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8')
+const readFile = filename => fs.readFileSync(getFixturePath(filename), 'utf-8')
 
 test('diffOfTwoJsonFiles', () => {
   const data1 = JSON.parse(readFile('fixture1.json'))

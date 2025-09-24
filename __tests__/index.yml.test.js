@@ -6,10 +6,10 @@ import buildDiffTree from '../src/diffBuilder/index.js'
 import stylish from '../formatters/stylish.js'
 
 // Упрощенный путь к фикстурам
-const getFixturePath = (filename) => 
+const getFixturePath = filename =>
   path.join(process.cwd(), '__fixtures__', filename)
 
-const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8')
+const readFile = filename => fs.readFileSync(getFixturePath(filename), 'utf-8')
 
 test('diffOfTwoJsonFiles', () => {
   const data1 = yml.load(readFile('fixture1.yml'))
