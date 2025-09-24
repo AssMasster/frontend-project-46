@@ -4,14 +4,12 @@ import fs from 'fs'
 import yml from 'js-yaml'
 import buildDiffTree from '../src/diffBuilder/index.js'
 import stylish from '../formatters/stylish.js'
-import { fileURLToPath } from 'url'
-import { dirname } from 'path'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
+// Упрощенный путь к фикстурам
+const getFixturePath = (filename) => 
+  path.join(process.cwd(), '__fixtures__', filename)
 
-const getFixturePath = filename => path.join(__dirname, '..', '__fixtures__', filename)
-const readFile = filename => fs.readFileSync(getFixturePath(filename), 'utf-8')
+const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8')
 
 test('diffOfTwoJsonFiles', () => {
   const data1 = yml.load(readFile('fixture1.yml'))
