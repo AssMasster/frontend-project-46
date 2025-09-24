@@ -18,7 +18,7 @@ export default function stylish(diff, depth = 1) {
 
     if (value === null) return 'null'
     if (value === undefined) return 'undefined'
-    if (value === '') return ' '
+    if (value === '') return ''
     return String(value)
   }
 
