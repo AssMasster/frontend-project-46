@@ -18,3 +18,8 @@ gendiff:
 
 test:
 	npx jest
+
+test-coverage:
+	npm test -- --coverage
+
+.PHONY: test
