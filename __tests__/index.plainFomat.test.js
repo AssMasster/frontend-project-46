@@ -2,7 +2,7 @@ import { test, expect } from '@jest/globals'
 import path from 'path'
 import fs from 'fs'
 import buildDiffTree from '../src/diffBuilder/index.js'
-import plain from '../formatters/plain.js'
+import plain from '../src/formatters/plain.js'
 
 const getFixturePath = filename =>
   path.join(process.cwd(), '__fixtures__', filename)

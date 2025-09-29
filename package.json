@@ -21,7 +21,7 @@
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "test:watch": "node --experimental-vm-modules node_modules/.bin/jest --watch",
     "test:coverage": "node --experimental-vm-modules node_modules/.bin/jest --coverage",
-    "lint": "eslint .",
+        "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {

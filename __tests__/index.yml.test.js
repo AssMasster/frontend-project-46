@@ -3,7 +3,7 @@ import path from 'path'
 import fs from 'fs'
 import yml from 'js-yaml'
 import buildDiffTree from '../src/diffBuilder/index.js'
-import stylish from '../formatters/stylish.js'
+import stylish from '../src/formatters/stylish.js'
 
 // Упрощенный путь к фикстурам
 const getFixturePath = filename =>
