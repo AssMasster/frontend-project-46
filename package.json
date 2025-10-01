@@ -15,7 +15,7 @@
   "type": "module",
   "main": "src/index.js",
   "bin": {
-    "gendiff": "src/bin/gendiff.js"
+    "gendiff": "bin/gendiff.js"
   },
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
